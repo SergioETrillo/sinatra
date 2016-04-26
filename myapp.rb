@@ -17,7 +17,7 @@ get '/bar' do
 end
 
 get '/cat' do
-  @kitty = ["Amigo", "Oscar", "Viking", "Shitty", "goaway"].sample
+  @kitty = ["Amigo", "Oscar", "Viking", "Fluffy", "goaway"].sample
   erb(:index )
 end
 
