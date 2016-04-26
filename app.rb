@@ -1,17 +1,11 @@
 require 'sinatra'
 
 get '/' do
-  "hello world!"
+  @name = ['Amigo', 'Oscar', 'Viking'].sample 
+  erb :index
 end
 
-get '/secret' do
-  "What is your favourite band? Mine is Lexi's Midnight Runners!"
-end
-
-get '/monkey_tennis' do
-  "It was like bigger than the world cup, according to Adam."
-end
-
-get '/cat' do
-  erb(:cat)
+get '/named-cat' do
+  p params
+  @name = params[:name]
 end
