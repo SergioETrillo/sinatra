@@ -13,5 +13,5 @@ get '/monkey_tennis' do
 end
 
 get '/cat' do
-  erb(:cat)
+  erb(:index)
 end
