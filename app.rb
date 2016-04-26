@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  @name = ['Amigo', 'Oscar', 'Viking'].sample 
+  @name = ['Amigo', 'Oscar', 'Viking'].sample
   erb :index
 end
 
@@ -9,8 +9,10 @@ get '/cat-form' do
   erb :cat_form
 end
 
-post '/named-cat' do
-  p params
-  @name = params[:name]
-  erb :named_cat
+get '/monkey_tennis' do
+  "It was like bigger than the world cup, according to Adam."
+end
+
+get '/cat' do
+  erb(:index)
 end
